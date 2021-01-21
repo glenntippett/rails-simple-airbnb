@@ -2,7 +2,38 @@
   background-color: #ededed;
   display: inline-block;
   position: absolute;
-  top: 300px;
+  top: 290px;
+  width: 600px;
+  padding: 32px;
+  border-radius: 8px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.flat-description {
+  background-color: #ededed;
+  display: inline-block;
+  position: absolute;
+  top: 450px;
+  width: 600px;
+  padding: 32px;
+  border-radius: 8px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.flat-details {
+  background-color: #ededed;
+  display: inline-block;
+  position: absolute;
+  top: 600px;
+  width: 600px;
   padding: 32px;
   border-radius: 8px;
   height: 120px;
