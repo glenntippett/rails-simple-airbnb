@@ -1,9 +1,25 @@
 <h1>All our flats (<%= @flats.length %>)</h1>
 
-<% @flats.each do |flat| %>
-  <h1><%= flat.name %></h1>
-  <p><%= flat.address %></p>
-  <span><i class="fas fa-users"></i>
-<%= flat.number_of_guests %></span>
-  <span><i class="fas fa-dollar-sign"></i> <%= flat.price_per_night %></span>
-<% end %>
+<div class="container">
+  <div class="row">
+    <% @flats.each do |flat| %>
+    <div class="col-md-4 my-2">
+      <div class="card bg-light mb-3 h-100" style="max-width: 100%;">
+        <div class="card-header h-50 d-flex align-items-center">
+          <h3><%= flat.name %></h3>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"><%= flat.address %></h5>
+          <p class="card-text"><span><i class="fas fa-users"></i>
+            <%= flat.number_of_guests %></span>
+            <span><i class="fas fa-dollar-sign"></i> <%= flat.price_per_night %></span></p>
+          </div>
+          <div class="card-body d-flex align-items-center">
+            <span><%= link_to 'More info', flat_path(flat), class: 'align-middle' %></span>
+          </div>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div>
+
