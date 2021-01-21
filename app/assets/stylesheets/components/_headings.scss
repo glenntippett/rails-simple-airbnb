@@ -1,0 +1,13 @@
+.show-flat-name-container {
+  background-color: #ededed;
+  display: inline-block;
+  position: absolute;
+  top: 300px;
+  padding: 32px;
+  border-radius: 8px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
