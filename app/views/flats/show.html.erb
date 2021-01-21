@@ -1,20 +1,51 @@
 <div class="flat-page-banner"></div>
 
 <div class="container">
-  <div class="show-flat-name-container">
-    <h2><%= @flat.name %></h2>
-    <p><%= @flat.address %></p>
-  </div>
+  <div class="row">
+    <div class="col-md-8">
 
-  <div class="flat-description">
-    <h2>A bit more about this flat...</h2>
-    <p><%= @flat.description %></p>
-  </div>
+      <div class="show-flat-name-container">
+        <h2><%= @flat.name %></h2>
+        <p><%= @flat.address %></p>
+      </div>
 
-  <div class="flat-details">
-    <h2>Details</h2>
-    <p class="card-text"><span><i class="fas fa-users"></i>
-      <%= @flat.number_of_guests %></span>
-      <span class="ml-3"><i class="fas fa-dollar-sign"></i><%= @flat.price_per_night %></span></p>
+      <div class="flat-description">
+        <h2>A bit more about this flat...</h2>
+        <p><%= @flat.description %></p>
+      </div>
+
+      <div class="flat-details">
+        <h2>Details</h2>
+        <p class="card-text"><span><i class="fas fa-users"></i>
+          <%= @flat.number_of_guests %></span>
+          <span class="ml-3"><i class="fas fa-dollar-sign"></i><%= @flat.price_per_night %></span></p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="booking-form">
+          <h2>Book now</h2>
+          <form action="">
+           <div class="input-group input-group-sm mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-sm">From:</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="10/10/2020">
+          </div>
+
+          <div class="input-group input-group-sm mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-sm">To:</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="10/10/2021">
+          </div>
+          <button type="submit" class="btn btn-success">Book</button>
+        </form>
+      </div>
+
     </div>
+
+    <!-- end of row -->
   </div>
+  <!-- end of container -->
+</div>
