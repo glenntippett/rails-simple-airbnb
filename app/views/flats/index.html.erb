@@ -1,15 +1,15 @@
-<h1>All our flats (<%= @flats.length %>)</h1>
 
-<div class="container">
+<div class="container my-5">
+  <h1>All our flats (<%= @flats.length %>)</h1>
   <div class="row">
     <% @flats.each do |flat| %>
-    <div class="col-md-4 my-2">
-      <div class="card bg-light mb-3 h-100" style="max-width: 100%;">
+    <div class="col-md-4 my-4">
+      <div class="card bg-light mb-3 h-100 shadow" style="max-width: 100%;">
         <div class="card-header h-50 d-flex align-items-center">
           <h3><%= flat.name %></h3>
         </div>
         <div class="card-body">
-          <h5 class="card-title"><%= flat.address %></h5>
+          <h6 class="card-title"><%= flat.address %></h6>
           <p class="card-text"><span><i class="fas fa-users"></i>
             <%= flat.number_of_guests %></span>
             <span><i class="fas fa-dollar-sign"></i> <%= flat.price_per_night %></span></p>
